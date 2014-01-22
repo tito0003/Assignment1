@@ -26,7 +26,7 @@
     
     NSDictionary*infoDictionary = [[NSBundle mainBundle] infoDictionary];
     NSString* version=[infoDictionary objectForKey:@"CFBundleShortVersionString"];
-    [m_Label setText: version];    NSURL* audioURL = [[NSBundle mainBundle] URLForResource:@"almost done3" withExtension:@"mp3"];
+    [m_Label setText: version];    NSURL* audioURL = [[NSBundle mainBundle] URLForResource:@"MainMenuTrack" withExtension:@"mp3"];
     audio = [[AVAudioPlayer alloc] initWithContentsOfURL:audioURL error:nil];
     [audio setNumberOfLoops:-1];
     [audio play];	// Do any additional setup after loading the view, typically from a nib.
@@ -54,8 +54,8 @@
 }
 - (void)viewWillDisappear:(BOOL)animated
 {
-    //[super viewWillDisappear:animated];
-    //[audio setNumberOfLoops:0];
+    [super viewWillDisappear:animated];
+    [audio setNumberOfLoops:0];
     [audio stop];
     
 }

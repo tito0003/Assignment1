@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A20D70E1188D9F3700B6920D /* almost done3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A20D70E0188D9F3700B6920D /* almost done3.mp3 */; };
 		A910F051188C42B600EC3034 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A910F050188C42B600EC3034 /* Foundation.framework */; };
 		A910F053188C42B600EC3034 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A910F052188C42B600EC3034 /* CoreGraphics.framework */; };
 		A910F055188C42B600EC3034 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A910F054188C42B600EC3034 /* UIKit.framework */; };
@@ -23,8 +22,7 @@
 		A910F075188C42B600EC3034 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A910F054188C42B600EC3034 /* UIKit.framework */; };
 		A910F07D188C42B600EC3034 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A910F07B188C42B600EC3034 /* InfoPlist.strings */; };
 		A910F07F188C42B600EC3034 /* Assignment1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A910F07E188C42B600EC3034 /* Assignment1Tests.m */; };
-		A9F19C9C188CCCBD006EA704 /* Splash.png in Resources */ = {isa = PBXBuildFile; fileRef = A9F19C9B188CCCBD006EA704 /* Splash.png */; };
-		A9F19C9E188CD2E4006EA704 /* FreedomFighters.png in Resources */ = {isa = PBXBuildFile; fileRef = A9F19C9D188CD2E4006EA704 /* FreedomFighters.png */; };
+		A943F2D6188E159D00A1C680 /* MainMenuTrack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A943F2D5188E159D00A1C680 /* MainMenuTrack.mp3 */; };
 		A9F263CE188CDD4C0033A42C /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F263CD188CDD4C0033A42C /* MainMenuViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -39,7 +37,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A20D70E0188D9F3700B6920D /* almost done3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "almost done3.mp3"; sourceTree = "<group>"; };
 		A910F04D188C42B600EC3034 /* Assignment1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A910F050188C42B600EC3034 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A910F052188C42B600EC3034 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -60,8 +57,7 @@
 		A910F07A188C42B600EC3034 /* Assignment1Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Assignment1Tests-Info.plist"; sourceTree = "<group>"; };
 		A910F07C188C42B600EC3034 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A910F07E188C42B600EC3034 /* Assignment1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Assignment1Tests.m; sourceTree = "<group>"; };
-		A9F19C9B188CCCBD006EA704 /* Splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Splash.png; path = "../../../../../../Volumes/NTFS/C++ 2ND YEAR/2ndSemester/Game Dev4/Ass1/FreedomFighter/Ready/Splash.png"; sourceTree = "<group>"; };
-		A9F19C9D188CD2E4006EA704 /* FreedomFighters.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FreedomFighters.png; path = "/Volumes/NTFS/C++ 2ND YEAR/2ndSemester/Game Dev4/Ass1/FreedomFighter/Ready/FreedomFighters.png"; sourceTree = "<absolute>"; };
+		A943F2D5188E159D00A1C680 /* MainMenuTrack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MainMenuTrack.mp3; sourceTree = "<group>"; };
 		A9F263CC188CDD4C0033A42C /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
 		A9F263CD188CDD4C0033A42C /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,9 +136,7 @@
 		A910F057188C42B600EC3034 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A20D70E0188D9F3700B6920D /* almost done3.mp3 */,
-				A9F19C9D188CD2E4006EA704 /* FreedomFighters.png */,
-				A9F19C9B188CCCBD006EA704 /* Splash.png */,
+				A943F2D5188E159D00A1C680 /* MainMenuTrack.mp3 */,
 				A910F058188C42B600EC3034 /* Assignment1-Info.plist */,
 				A910F059188C42B600EC3034 /* InfoPlist.strings */,
 				A910F05C188C42B600EC3034 /* main.m */,
@@ -245,11 +239,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9F19C9E188CD2E4006EA704 /* FreedomFighters.png in Resources */,
+				A943F2D6188E159D00A1C680 /* MainMenuTrack.mp3 in Resources */,
 				A910F067188C42B600EC3034 /* Main_iPad.storyboard in Resources */,
 				A910F06C188C42B600EC3034 /* Images.xcassets in Resources */,
-				A9F19C9C188CCCBD006EA704 /* Splash.png in Resources */,
-				A20D70E1188D9F3700B6920D /* almost done3.mp3 in Resources */,
 				A910F064188C42B600EC3034 /* Main_iPhone.storyboard in Resources */,
 				A910F05B188C42B600EC3034 /* InfoPlist.strings in Resources */,
 			);
