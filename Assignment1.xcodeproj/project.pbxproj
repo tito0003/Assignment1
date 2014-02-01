@@ -15,7 +15,6 @@
 		A910F061188C42B600EC3034 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A910F060188C42B600EC3034 /* AppDelegate.m */; };
 		A910F064188C42B600EC3034 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A910F062188C42B600EC3034 /* Main_iPhone.storyboard */; };
 		A910F067188C42B600EC3034 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A910F065188C42B600EC3034 /* Main_iPad.storyboard */; };
-		A910F06A188C42B600EC3034 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A910F069188C42B600EC3034 /* ViewController.m */; };
 		A910F06C188C42B600EC3034 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A910F06B188C42B600EC3034 /* Images.xcassets */; };
 		A910F073188C42B600EC3034 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A910F072188C42B600EC3034 /* XCTest.framework */; };
 		A910F074188C42B600EC3034 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A910F050188C42B600EC3034 /* Foundation.framework */; };
@@ -23,6 +22,7 @@
 		A910F07D188C42B600EC3034 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A910F07B188C42B600EC3034 /* InfoPlist.strings */; };
 		A910F07F188C42B600EC3034 /* Assignment1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A910F07E188C42B600EC3034 /* Assignment1Tests.m */; };
 		A943F2D6188E159D00A1C680 /* MainMenuTrack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A943F2D5188E159D00A1C680 /* MainMenuTrack.mp3 */; };
+		A9E7E1A5189D8CF300D6E69D /* SettingMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E7E1A4189D8CF300D6E69D /* SettingMenuViewController.m */; };
 		A9F263CE188CDD4C0033A42C /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F263CD188CDD4C0033A42C /* MainMenuViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -49,8 +49,6 @@
 		A910F060188C42B600EC3034 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A910F063188C42B600EC3034 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		A910F066188C42B600EC3034 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		A910F068188C42B600EC3034 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A910F069188C42B600EC3034 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A910F06B188C42B600EC3034 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A910F071188C42B600EC3034 /* Assignment1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Assignment1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A910F072188C42B600EC3034 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -58,6 +56,8 @@
 		A910F07C188C42B600EC3034 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A910F07E188C42B600EC3034 /* Assignment1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Assignment1Tests.m; sourceTree = "<group>"; };
 		A943F2D5188E159D00A1C680 /* MainMenuTrack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MainMenuTrack.mp3; sourceTree = "<group>"; };
+		A9E7E1A3189D8CF300D6E69D /* SettingMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingMenuViewController.h; sourceTree = "<group>"; };
+		A9E7E1A4189D8CF300D6E69D /* SettingMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingMenuViewController.m; sourceTree = "<group>"; };
 		A9F263CC188CDD4C0033A42C /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
 		A9F263CD188CDD4C0033A42C /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,6 +89,8 @@
 		A910F044188C42B600EC3034 = {
 			isa = PBXGroup;
 			children = (
+				A9E7E1A3189D8CF300D6E69D /* SettingMenuViewController.h */,
+				A9E7E1A4189D8CF300D6E69D /* SettingMenuViewController.m */,
 				A9F263CC188CDD4C0033A42C /* MainMenuViewController.h */,
 				A9F263CD188CDD4C0033A42C /* MainMenuViewController.m */,
 				A910F056188C42B600EC3034 /* Assignment1 */,
@@ -125,8 +127,6 @@
 				A910F060188C42B600EC3034 /* AppDelegate.m */,
 				A910F062188C42B600EC3034 /* Main_iPhone.storyboard */,
 				A910F065188C42B600EC3034 /* Main_iPad.storyboard */,
-				A910F068188C42B600EC3034 /* ViewController.h */,
-				A910F069188C42B600EC3034 /* ViewController.m */,
 				A910F06B188C42B600EC3034 /* Images.xcassets */,
 				A910F057188C42B600EC3034 /* Supporting Files */,
 			);
@@ -262,8 +262,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9E7E1A5189D8CF300D6E69D /* SettingMenuViewController.m in Sources */,
 				A9F263CE188CDD4C0033A42C /* MainMenuViewController.m in Sources */,
-				A910F06A188C42B600EC3034 /* ViewController.m in Sources */,
 				A910F061188C42B600EC3034 /* AppDelegate.m in Sources */,
 				A910F05D188C42B600EC3034 /* main.m in Sources */,
 			);

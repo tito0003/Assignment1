@@ -1,19 +1,16 @@
 //
-//  
+//  SettingMenuViewController.h
 //  Assignment1
 //
-//  Created by xXx on 2014-01-19.
+//  Created by xXx on 2014-02-01.
 //  Copyright (c) 2014 xXx. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface MainMenuViewController : UIViewController
+@interface SettingMenuViewController : UIViewController
 {
-    UILabel * m_Label;
+     UILabel * m_Label;    
 }
--(IBAction)playButtonEvent:(id)sender;
-
 @property (nonatomic) IBOutlet UILabel* label;
-
 @end
