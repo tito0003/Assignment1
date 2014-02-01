@@ -21,7 +21,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dwb-BC-cy3">
-                                <rect key="frame" x="476" y="643" width="72" height="30"/>
+                                <rect key="frame" x="496" y="640" width="72" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Continue">
                                     <color key="titleColor" red="0.99768757624884319" green="0.91967032878864285" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -39,7 +39,43 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="66" y="-78"/>
+            <point key="canvasLocation" x="-1102" y="-60"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Zha-SO-Leb">
+            <objects>
+                <viewController modalTransitionStyle="flipHorizontal" id="dYC-Hc-ZoI" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FlU-ot-PZD"/>
+                        <viewControllerLayoutGuide type="bottom" id="IzN-GE-rdp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0kC-su-liM">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ControlsMenu" translatesAutoresizingMaskIntoConstraints="NO" id="9Of-CF-Ekw">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73G-Hl-d8j">
+                                <rect key="frame" x="43" y="709" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="RED-g3-Fab" kind="modal" id="54v-s4-Mkr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0i3-XD-0TA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-534" y="1207"/>
         </scene>
         <!--Main Menu View Controller-->
         <scene sceneID="ap4-iB-jHq">
@@ -80,7 +116,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9jI-bU-cao">
-                                <rect key="frame" x="762" y="708" width="242" height="40"/>
+                                <rect key="frame" x="561" y="688" width="242" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" image="Credits-Normal">
@@ -88,6 +124,17 @@
                                 </state>
                                 <connections>
                                     <segue destination="KWv-Yp-7bi" kind="modal" id="MNd-Gb-nkF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Xp-t9-yuj">
+                                <rect key="frame" x="187" y="681" width="240" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" image="Controls-Normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="dYC-Hc-ZoI" kind="modal" id="mWK-kz-6bd"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -98,7 +145,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yIS-le-xHj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1402" y="-84"/>
+            <point key="canvasLocation" x="690" y="-92"/>
         </scene>
         <!--Setting Menu View Controller-->
         <scene sceneID="hVa-RI-f9W">
@@ -134,7 +181,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MVc-2X-DsF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1409" y="850"/>
+            <point key="canvasLocation" x="2089" y="1202"/>
         </scene>
         <!--Setting Menu View Controller-->
         <scene sceneID="Pua-j4-StC">
@@ -160,7 +207,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JOe-H3-X2z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2491" y="-78"/>
+            <point key="canvasLocation" x="3003" y="-38"/>
         </scene>
         <!--Credits View Controller-->
         <scene sceneID="fNt-Kb-j9f">
@@ -206,10 +253,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B7h-Ig-oBP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2633" y="856"/>
+            <point key="canvasLocation" x="761" y="1224"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Controls-Normal" width="290" height="40"/>
+        <image name="ControlsMenu" width="1024" height="768"/>
         <image name="Credits-Normal" width="290" height="40"/>
         <image name="CreditsMenu" width="1024" height="768"/>
         <image name="LoadingMenu" width="1024" height="768"/>
@@ -225,6 +274,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="sJQ-kT-8q5"/>
+        <segue reference="8fy-mR-IPz"/>
     </inferredMetricsTieBreakers>
 </document>

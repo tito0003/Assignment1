@@ -51,7 +51,7 @@
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-    [audio setNumberOfLoops:0];
+   [audio setNumberOfLoops:0];
     [audio stop];
     
 }

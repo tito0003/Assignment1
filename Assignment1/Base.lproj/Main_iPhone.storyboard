@@ -40,7 +40,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3st-au-aYb">
-                                <rect key="frame" x="448" y="284" width="120" height="29"/>
+                                <rect key="frame" x="351" y="294" width="120" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" image="Credits-Normal">
@@ -48,6 +48,17 @@
                                 </state>
                                 <connections>
                                     <segue destination="0hj-ua-1hR" kind="modal" id="DS5-Uv-ebD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wAM-8a-KKM">
+                                <rect key="frame" x="90" y="294" width="120" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" image="Controls-Normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="UWG-5U-ajc" kind="modal" id="80Q-Yx-Tlw"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -58,7 +69,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="366" y="-388"/>
+            <point key="canvasLocation" x="34" y="-252"/>
         </scene>
         <!--Setting Menu View Controller-->
         <scene sceneID="HQX-dJ-o4c">
@@ -90,7 +101,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="67e-ZN-wgL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="357" y="35"/>
+            <point key="canvasLocation" x="49" y="563"/>
         </scene>
         <!--Credits View Controller-->
         <scene sceneID="Znh-rN-TOV">
@@ -132,7 +143,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xzB-Nj-bxO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1036" y="35"/>
+            <point key="canvasLocation" x="784" y="571"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="62y-lB-SQM">
@@ -154,7 +165,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EMP-lF-qZe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1036" y="-370"/>
+            <point key="canvasLocation" x="1116" y="-286"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="e66-hS-Csr">
@@ -186,10 +197,44 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e2a-EV-tEG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-363" y="-370"/>
+            <point key="canvasLocation" x="-1067" y="-266"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5aa-n2-HVV">
+            <objects>
+                <viewController modalTransitionStyle="flipHorizontal" id="UWG-5U-ajc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GoK-sB-mne">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ControlsMenu" id="Oi3-g4-qyT">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vgb-6I-siK">
+                                <rect key="frame" x="20" y="282" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="modal" id="wmN-zP-iGO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Isj-pB-n8b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-778" y="593"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Controls-Normal" width="290" height="40"/>
+        <image name="ControlsMenu" width="480" height="320"/>
         <image name="Credits-Normal" width="290" height="40"/>
         <image name="CreditsMenu" width="480" height="320"/>
         <image name="LoadingMenu" width="480" height="320"/>
