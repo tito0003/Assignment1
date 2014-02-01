@@ -17,16 +17,11 @@
 
 @implementation MainMenuViewController
 
-@synthesize label=m_Label;
-
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    NSDictionary*infoDictionary = [[NSBundle mainBundle] infoDictionary];
-    NSString* version=[infoDictionary objectForKey:@"CFBundleShortVersionString"];
-    [m_Label setText: version];
+   
     NSURL* audioURL = [[NSBundle mainBundle] URLForResource:@"MainMenuTrack" withExtension:@"mp3"];
     audio = [[AVAudioPlayer alloc] initWithContentsOfURL:audioURL error:nil];
     [audio setNumberOfLoops:-1];

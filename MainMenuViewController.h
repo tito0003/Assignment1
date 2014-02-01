@@ -9,11 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface MainMenuViewController : UIViewController
-{
-    UILabel * m_Label;
-}
+
 -(IBAction)playButtonEvent:(id)sender;
 
-@property (nonatomic) IBOutlet UILabel* label;
+
 
 @end

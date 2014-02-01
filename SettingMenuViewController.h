@@ -9,8 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface SettingMenuViewController : UIViewController
-{
-     UILabel * m_Label;    
-}
-@property (nonatomic) IBOutlet UILabel* label;
+
+    
 @end

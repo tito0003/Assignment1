@@ -1,20 +1,20 @@
 //
-//  SettingMenuViewController.m
+//  CreditsViewController.m
 //  Assignment1
 //
 //  Created by xXx on 2014-02-01.
 //  Copyright (c) 2014 xXx. All rights reserved.
 //
 
-#import "SettingMenuViewController.h"
+#import "CreditsViewController.h"
 
-@interface SettingMenuViewController ()
+@interface CreditsViewController ()
 
 @end
 
-@implementation SettingMenuViewController
+@implementation CreditsViewController
 
-
+@synthesize label=m_Label;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,8 +28,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-   	// Do any additional setup after loading the view.
+    NSDictionary*infoDictionary = [[NSBundle mainBundle] infoDictionary];
+    NSString* version=[infoDictionary objectForKey:@"CFBundleShortVersionString"];
+    [m_Label setText: version];
+	// Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning

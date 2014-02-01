@@ -41,10 +41,10 @@
             </objects>
             <point key="canvasLocation" x="66" y="-78"/>
         </scene>
-        <!--View Controller-->
+        <!--Main Menu View Controller-->
         <scene sceneID="ap4-iB-jHq">
             <objects>
-                <viewController modalTransitionStyle="flipHorizontal" id="RED-g3-Fab" customClass="ViewController" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" id="RED-g3-Fab" customClass="MainMenuViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hmn-dG-oUX"/>
                         <viewControllerLayoutGuide type="bottom" id="qUs-DU-ycv"/>
@@ -68,6 +68,28 @@
                                     <segue destination="tjO-xD-iQI" kind="modal" id="Q7B-iI-cbj"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xU8-zv-6m9">
+                                <rect key="frame" x="745" y="20" width="286" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" image="Settings-Normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="61F-tw-X9i" kind="modal" id="fer-F1-efh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9jI-bU-cao">
+                                <rect key="frame" x="762" y="708" width="242" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" image="Credits-Normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="KWv-Yp-7bi" kind="modal" id="MNd-Gb-nkF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -76,12 +98,48 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yIS-le-xHj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1326" y="-78"/>
+            <point key="canvasLocation" x="1402" y="-84"/>
         </scene>
-        <!--View Controller-->
+        <!--Setting Menu View Controller-->
+        <scene sceneID="hVa-RI-f9W">
+            <objects>
+                <viewController modalTransitionStyle="flipHorizontal" id="61F-tw-X9i" customClass="SettingMenuViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wn1-w1-Ucq"/>
+                        <viewControllerLayoutGuide type="bottom" id="7LP-21-azF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FiD-Gm-E4R">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SettingsMenu" translatesAutoresizingMaskIntoConstraints="NO" id="bN5-24-v1f">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2H-bq-ysq">
+                                <rect key="frame" x="29" y="702" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="RED-g3-Fab" kind="modal" id="8fy-mR-IPz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MVc-2X-DsF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1409" y="850"/>
+        </scene>
+        <!--Setting Menu View Controller-->
         <scene sceneID="Pua-j4-StC">
             <objects>
-                <viewController id="tjO-xD-iQI" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" id="tjO-xD-iQI" customClass="SettingMenuViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Dmd-2c-uNw"/>
                         <viewControllerLayoutGuide type="bottom" id="Pdx-ZQ-3KC"/>
@@ -104,11 +162,61 @@
             </objects>
             <point key="canvasLocation" x="2491" y="-78"/>
         </scene>
+        <!--Credits View Controller-->
+        <scene sceneID="fNt-Kb-j9f">
+            <objects>
+                <viewController modalTransitionStyle="flipHorizontal" id="KWv-Yp-7bi" customClass="CreditsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qgh-yX-FXK"/>
+                        <viewControllerLayoutGuide type="bottom" id="TaY-Z2-4yt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="q4w-uB-9BS">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CreditsMenu" translatesAutoresizingMaskIntoConstraints="NO" id="0Bk-Ff-XkS">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00z-o8-Bg1">
+                                <rect key="frame" x="44" y="691" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="RED-g3-Fab" kind="modal" id="sJQ-kT-8q5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZM-1L-Obd">
+                                <rect key="frame" x="498" y="674" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="label" destination="YZM-1L-Obd" id="dWo-Jr-dEb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B7h-Ig-oBP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2633" y="856"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Credits-Normal" width="290" height="40"/>
+        <image name="CreditsMenu" width="1024" height="768"/>
         <image name="LoadingMenu" width="1024" height="768"/>
         <image name="MainMenu" width="1024" height="768"/>
         <image name="PlayButton-Normal" width="240" height="40"/>
+        <image name="Settings-Normal" width="240" height="40"/>
+        <image name="SettingsMenu" width="1024" height="768"/>
         <image name="SplashMenu" width="1024" height="768"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -116,4 +224,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="sJQ-kT-8q5"/>
+    </inferredMetricsTieBreakers>
 </document>
