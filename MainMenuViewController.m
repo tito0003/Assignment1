@@ -5,13 +5,16 @@
 //  Created by xXx on 2014-01-19.
 //  Copyright (c) 2014 xXx. All rights reserved.
 //
+//#include "GameSettings.h"
 
 #import "MainMenuViewController.h"
 #import<AVFoundation/AVFoundation.h>
 
+
 @interface MainMenuViewController ()
 {
     AVAudioPlayer* audio;
+    
 }
 @end
 
@@ -25,7 +28,10 @@
     NSURL* audioURL = [[NSBundle mainBundle] URLForResource:@"MainMenuTrack" withExtension:@"mp3"];
     audio = [[AVAudioPlayer alloc] initWithContentsOfURL:audioURL error:nil];
     [audio setNumberOfLoops:-1];
-    [audio play];	// Do any additional setup after loading the view, typically from a nib.
+    [audio play];
+    //float sound = (GameSettings::getInstance()->getMusicVolume());
+	//[audio setVolume:sound];
+    // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning

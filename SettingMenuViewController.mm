@@ -7,14 +7,13 @@
 //
 
 #import "SettingMenuViewController.h"
+#include "GameSettings.h"
 
 @interface SettingMenuViewController ()
 
 @end
 
 @implementation SettingMenuViewController
-
-
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -37,5 +36,28 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+-(IBAction)musicSliderEvent:(id)sender
+{
+   if([sender isKindOfClass:[UISlider class]] == YES)
+   {
+       UISlider* slider = sender;
+       GameSettings::getInstance()->setMusicVolume(slider.value);
+    
+   }
+}
 
+/*-(IBAction)soundEffectsSliderEvent:(id)sender
+{
+    
+}
+
+-(IBAction)difficultySelectorEvent:(id)sender
+{
+    
+}
+-(IBAction]highscoresSwitchEvent):(id)sender
+{
+    
+}
+ */
 @end

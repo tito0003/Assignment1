@@ -10,5 +10,9 @@
 
 @interface SettingMenuViewController : UIViewController
 
+-(IBAction)musicSliderEvent:(id)sender;
+-(IBAction)soundEffectsSliderEvent:(id)sender;
+-(IBAction)difficultySelectorEvent:(id)sender;
+-(IBAction)highscoresSwitchEvent:(id)sender;
     
 @end
