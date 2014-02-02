@@ -54,24 +54,24 @@ void GameSettings::setSoundEffectsVolume(float volume)
 
 int GameSettings::getDifficulty()
 {
-    return 0;
+    return m_Difficulty;
 
 }
 
 void GameSettings::setDifficulty(int difficulty)
 {
-    
+    m_Difficulty=difficulty;
 }
 
 
 bool GameSettings::getUploadHighscores()
 {
-    return 0;
+    return m_UploadHighscores;
 }
 
 void GameSettings::setUploadHighscores(bool highscores)
 {
-    
+    m_UploadHighscores=highscores;
 }
 
 

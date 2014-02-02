@@ -46,18 +46,34 @@
    }
 }
 
-/*-(IBAction)soundEffectsSliderEvent:(id)sender
+-(IBAction)soundEffectsSliderEvent:(id)sender
 {
-    
+    if([sender isKindOfClass:[UISlider class]] == YES)
+    {
+        UISlider* slider = sender;
+        GameSettings::getInstance()->setSoundEffectsVolume(slider.value);
+        
+    }
 }
 
 -(IBAction)difficultySelectorEvent:(id)sender
 {
+    if([sender isKindOfClass:[UISegmentedControl class]] == YES)
+    {
+        UISegmentedControl * segmentedControl = sender;
+        GameSettings::getInstance()->setDifficulty(segmentedControl.selectedSegmentIndex);
+        
+    }
     
 }
--(IBAction]highscoresSwitchEvent):(id)sender
+-(IBAction)highscoresSwitchEvent:(id)sender
 {
-    
+    if([sender isKindOfClass:[UISwitch class]] == YES)
+    {
+        UISwitch * switchControl = sender;
+        GameSettings::getInstance()->setUploadHighscores(switchControl.isOn);
+        
+    }
 }
- */
+ 
 @end
