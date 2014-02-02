@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A90874ED189EC22C006CB64E /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A90874EC189EC22C006CB64E /* GameViewController.m */; };
 		A910F051188C42B600EC3034 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A910F050188C42B600EC3034 /* Foundation.framework */; };
 		A910F053188C42B600EC3034 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A910F052188C42B600EC3034 /* CoreGraphics.framework */; };
 		A910F055188C42B600EC3034 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A910F054188C42B600EC3034 /* UIKit.framework */; };
@@ -22,6 +23,8 @@
 		A910F07D188C42B600EC3034 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A910F07B188C42B600EC3034 /* InfoPlist.strings */; };
 		A910F07F188C42B600EC3034 /* Assignment1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A910F07E188C42B600EC3034 /* Assignment1Tests.m */; };
 		A943F2D6188E159D00A1C680 /* MainMenuTrack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A943F2D5188E159D00A1C680 /* MainMenuTrack.mp3 */; };
+		A9CD89A4189ED469000DC20B /* InGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CD89A2189ED469000DC20B /* InGameViewController.m */; };
+		A9CD89A5189ED469000DC20B /* InGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9CD89A3189ED469000DC20B /* InGameViewController.xib */; };
 		A9E7E1A5189D8CF300D6E69D /* SettingMenuViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9E7E1A4189D8CF300D6E69D /* SettingMenuViewController.mm */; };
 		A9E7E1A8189DA1E400D6E69D /* CreditsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E7E1A7189DA1E400D6E69D /* CreditsViewController.m */; };
 		A9E7E1AF189DC62A00D6E69D /* GameSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9E7E1AD189DC62A00D6E69D /* GameSettings.cpp */; };
@@ -40,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A90874EB189EC22C006CB64E /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		A90874EC189EC22C006CB64E /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		A910F04D188C42B600EC3034 /* Assignment1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A910F050188C42B600EC3034 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A910F052188C42B600EC3034 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -59,6 +64,9 @@
 		A910F07C188C42B600EC3034 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A910F07E188C42B600EC3034 /* Assignment1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Assignment1Tests.m; sourceTree = "<group>"; };
 		A943F2D5188E159D00A1C680 /* MainMenuTrack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MainMenuTrack.mp3; sourceTree = "<group>"; };
+		A9CD89A1189ED469000DC20B /* InGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InGameViewController.h; sourceTree = "<group>"; };
+		A9CD89A2189ED469000DC20B /* InGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InGameViewController.m; sourceTree = "<group>"; };
+		A9CD89A3189ED469000DC20B /* InGameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InGameViewController.xib; sourceTree = "<group>"; };
 		A9E7E1A3189D8CF300D6E69D /* SettingMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingMenuViewController.h; sourceTree = "<group>"; };
 		A9E7E1A4189D8CF300D6E69D /* SettingMenuViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SettingMenuViewController.mm; sourceTree = "<group>"; };
 		A9E7E1A6189DA1E400D6E69D /* CreditsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditsViewController.h; sourceTree = "<group>"; };
@@ -98,6 +106,11 @@
 		A910F044188C42B600EC3034 = {
 			isa = PBXGroup;
 			children = (
+				A9CD89A1189ED469000DC20B /* InGameViewController.h */,
+				A9CD89A2189ED469000DC20B /* InGameViewController.m */,
+				A9CD89A3189ED469000DC20B /* InGameViewController.xib */,
+				A90874EB189EC22C006CB64E /* GameViewController.h */,
+				A90874EC189EC22C006CB64E /* GameViewController.m */,
 				A9E7E1B0189E0E4E00D6E69D /* LoadingMenuViewController.h */,
 				A9E7E1B1189E0E4E00D6E69D /* LoadingMenuViewController.m */,
 				A9E7E1A9189DC5EA00D6E69D /* C++Files */,
@@ -267,6 +280,7 @@
 				A910F06C188C42B600EC3034 /* Images.xcassets in Resources */,
 				A910F064188C42B600EC3034 /* Main_iPhone.storyboard in Resources */,
 				A910F05B188C42B600EC3034 /* InfoPlist.strings in Resources */,
+				A9CD89A5189ED469000DC20B /* InGameViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,8 +299,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A90874ED189EC22C006CB64E /* GameViewController.m in Sources */,
 				A9E7E1A5189D8CF300D6E69D /* SettingMenuViewController.mm in Sources */,
 				A9E7E1B2189E0E4E00D6E69D /* LoadingMenuViewController.m in Sources */,
+				A9CD89A4189ED469000DC20B /* InGameViewController.m in Sources */,
 				A9E7E1A8189DA1E400D6E69D /* CreditsViewController.m in Sources */,
 				A9F263CE188CDD4C0033A42C /* MainMenuViewController.m in Sources */,
 				A910F061188C42B600EC3034 /* AppDelegate.m in Sources */,

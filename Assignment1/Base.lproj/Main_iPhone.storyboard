@@ -13,7 +13,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MainMenu" id="Zw2-xx-BvX">
-                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                <rect key="frame" x="0.0" y="0.0" width="568.5" height="320"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="g0i-Wc-5aB">
@@ -195,10 +195,29 @@
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <segue destination="Rkq-9I-Yb2" kind="modal" id="a6y-nl-z5M"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EMP-lF-qZe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1116" y="-286"/>
+        </scene>
+        <!--In Game View Controller-->
+        <scene sceneID="xnd-QB-BoK">
+            <objects>
+                <viewController storyboardIdentifier="GameViewController" modalTransitionStyle="flipHorizontal" id="Rkq-9I-Yb2" customClass="InGameViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SVl-qO-za6">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hvl-tZ-R4o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1840" y="-286"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="e66-hS-Csr">

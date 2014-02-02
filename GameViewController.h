@@ -1,5 +1,5 @@
 //
-//  LoadingMenuViewController.h
+//  GameViewController.h
 //  Assignment1
 //
 //  Created by xXx on 2014-02-02.
@@ -8,12 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-
-@interface LoadingMenuViewController : UIViewController
-
-//-(IBAction)Next;
-
-
-
+@interface GameViewController : UIViewController
 
 @end
