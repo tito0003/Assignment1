@@ -79,6 +79,49 @@
 - (void)viewDidLoad
 {//withObject:self afterDelay:3];
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    UIImageView* m_RotatingStar = [[UIImageView alloc] initWithFrame:self.view.bounds];
+    m_RotatingStar.animationImages =
+    [NSArray arrayWithObjects:
+     [UIImage imageNamed:@"1.png"],
+     [UIImage imageNamed:@"2.png"],
+     [UIImage imageNamed:@"3.png"],
+     [UIImage imageNamed:@"4.png"],
+     [UIImage imageNamed:@"5.png"],
+     [UIImage imageNamed:@"6.png"],
+     [UIImage imageNamed:@"7.png"],
+     [UIImage imageNamed:@"8.png"],
+     [UIImage imageNamed:@"9.png"],
+     [UIImage imageNamed:@"10.png" ], nil];
+    
+    m_RotatingStar.animationDuration=3.8f;
+    m_RotatingStar.animationRepeatCount =-1;
+    [m_RotatingStar startAnimating];
+    [self.view addSubview: m_RotatingStar];
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    ///////////////////
+    
     [self performSelector:@selector(SwitchToTheNextScreen) withObject:nil afterDelay:3];    //dissMissviewController is the method which has the code for dismissing the viewController.
     
      [super viewDidLoad];    

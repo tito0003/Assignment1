@@ -23,8 +23,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-   
+       
     NSURL* audioURL = [[NSBundle mainBundle] URLForResource:@"MainMenuTrack" withExtension:@"mp3"];
     audio = [[AVAudioPlayer alloc] initWithContentsOfURL:audioURL error:nil];
     [audio setNumberOfLoops:-1];
@@ -61,4 +60,17 @@
     [audio stop];
     
 }
+/*-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    double m_Time = 3.0f;
+    dispatch_time_t m_StratTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(m_Time * NSEC_PER_SEC));
+    
+   
+    dispatch_after(m_StratTime , dispatch_get_main_queue(), ^(void) {[self performSegueWithIdentifier:@
+        
+    }
+}
+ */
 @end
