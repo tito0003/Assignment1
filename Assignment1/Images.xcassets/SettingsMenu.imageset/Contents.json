@@ -7,23 +7,23 @@
     {
       "idiom" : "iphone",
       "scale" : "2x",
-      "filename" : "iphone4_2X.png"
+      "filename" : "iphone4.png"
     },
     {
       "idiom" : "iphone",
-      "filename" : "iphone5_R4.png",
+      "filename" : "iphone5R.png",
       "subtype" : "retina4",
       "scale" : "2x"
     },
     {
       "idiom" : "ipad",
       "scale" : "1x",
-      "filename" : "iPadLandscape1X.png"
+      "filename" : "ipad1x.png"
     },
     {
       "idiom" : "ipad",
       "scale" : "2x",
-      "filename" : "iPadLandscape2X.png"
+      "filename" : "ipad2x.png"
     }
   ],
   "info" : {

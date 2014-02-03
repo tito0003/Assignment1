@@ -38,6 +38,9 @@
 {
     InGameViewController *InGameVC = [[InGameViewController alloc] initWithNibName:nil bundle:nil];
     [self presentViewController:(InGameVC) animated:(YES) completion:NULL];
+  ////////////////////////////////////////////////////////
+    
+    
 }
 /*- (void)SwitchViewController
 {

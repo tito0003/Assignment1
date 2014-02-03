@@ -79,9 +79,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SettingsMenu" id="WWD-FG-81y">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SettingsMenu" id="dEh-EL-UcM">
                                 <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="K8L-hN-VOI">
                                 <rect key="frame" x="20" y="277" width="46" height="30"/>
@@ -94,21 +94,21 @@
                                 </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="taT-DP-NMI">
-                                <rect key="frame" x="342" y="151" width="90" height="34"/>
+                                <rect key="frame" x="294" y="153" width="90" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="musicSliderEvent:" destination="Ayo-iy-qBD" eventType="valueChanged" id="I8U-Qd-iM2"/>
                                 </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="tPK-5H-dTh">
-                                <rect key="frame" x="342" y="187" width="90" height="34"/>
+                                <rect key="frame" x="294" y="194" width="90" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="soundEffectsSliderEvent:" destination="Ayo-iy-qBD" eventType="valueChanged" id="7rM-XL-2mL"/>
                                 </connections>
                             </slider>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="1" id="dWb-iT-Ng3">
-                                <rect key="frame" x="311" y="228" width="162" height="29"/>
+                                <rect key="frame" x="263" y="233" width="162" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="easy"/>
@@ -120,7 +120,7 @@
                                 </connections>
                             </segmentedControl>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="jcs-Ab-Mep">
-                                <rect key="frame" x="363" y="269" width="51" height="31"/>
+                                <rect key="frame" x="320" y="283" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="highscoresSwitchEvent:" destination="Ayo-iy-qBD" eventType="valueChanged" id="o3P-bl-gMO"/>
@@ -206,10 +206,16 @@
         <!--In Game View Controller-->
         <scene sceneID="xnd-QB-BoK">
             <objects>
-                <viewController storyboardIdentifier="GameViewController" modalTransitionStyle="flipHorizontal" id="Rkq-9I-Yb2" customClass="InGameViewController" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" id="Rkq-9I-Yb2" customClass="InGameViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SVl-qO-za6">
                         <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ControlsMenu" id="DuD-TT-XaB">
+                                <rect key="frame" x="-47" y="0.0" width="568" height="320"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
@@ -219,10 +225,52 @@
             </objects>
             <point key="canvasLocation" x="1840" y="-286"/>
         </scene>
+        <!--Table View Controller - Root View Controller-->
+        <scene sceneID="aoe-ap-VJ9">
+            <objects>
+                <tableViewController id="MBf-uy-0gV" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="RbB-Rh-ZPy">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="kvZ-7F-ld1">
+                                <rect key="frame" x="0.0" y="86" width="568" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kvZ-7F-ld1" id="f2I-5h-obv">
+                                    <rect key="frame" x="0.0" y="0.0" width="568" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="a3O-4y-yHz"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aiq-vU-uzT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2144" y="336"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Hcz-ld-odt">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="LvH-CG-yby" sceneMemberID="viewController">
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5rN-Pb-Y1P">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="MBf-uy-0gV" kind="relationship" relationship="rootViewController" id="sjR-bn-aJ4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wmK-p0-qYI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1440" y="316"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="e66-hS-Csr">
             <objects>
-                <viewController modalTransitionStyle="flipHorizontal" id="UVJ-OV-NYQ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SSViewController" modalTransitionStyle="flipHorizontal" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UVJ-OV-NYQ" customClass="SSViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vir-NP-Que">
                         <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
