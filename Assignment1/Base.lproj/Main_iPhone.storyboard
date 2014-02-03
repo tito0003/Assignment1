@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="UVJ-OV-NYQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="UVJ-OV-NYQ">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
@@ -13,11 +13,11 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MainMenu" id="Zw2-xx-BvX">
-                                <rect key="frame" x="0.0" y="0.0" width="568.5" height="320"/>
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="g0i-Wc-5aB">
-                                <rect key="frame" x="5" y="5" width="120" height="20"/>
+                                <rect key="frame" x="6" y="5" width="120" height="20"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" backgroundImage="PlayButton-Normal">
@@ -181,7 +181,7 @@
         <!--In Game View Controller-->
         <scene sceneID="OgQ-Zw-Kpi">
             <objects>
-                <viewController id="OWC-ag-kTh" customClass="InGameViewController" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" id="OWC-ag-kTh" customClass="InGameViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H9c-IU-UdN">
                         <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -191,12 +191,16 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gIO-4R-MnN">
-                                <rect key="frame" x="502" y="11" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="508" y="12" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" backgroundImage="PauseButton-Normal">
+                                <state key="normal" image="PauseButton-Normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted" image="PauseButton-HighLighted"/>
+                                <connections>
+                                    <segue destination="XmF-Qe-b6n" kind="modal" id="r23-fv-1hS"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -207,6 +211,58 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oGh-Yy-CVA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1820" y="-286"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vfl-KU-pFy">
+            <objects>
+                <viewController modalTransitionStyle="flipHorizontal" id="XmF-Qe-b6n" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I4b-GL-bFh">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PauseMenu" id="EGj-jJ-6kT">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Xy4-Jl-gx8">
+                                <rect key="frame" x="209" y="181" width="150" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Restart-Normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="OWC-ag-kTh" kind="modal" id="qRG-94-QvL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tpu-o2-n6t">
+                                <rect key="frame" x="209" y="268" width="150" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="BackButton-Normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="OWC-ag-kTh" kind="modal" id="mIe-G5-O64"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CHT-q8-A1b">
+                                <rect key="frame" x="170" y="224" width="150" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="MainMenuButton-Normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="modal" id="YTT-DD-aIh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GS0-bH-H1A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1820" y="214"/>
         </scene>
         <!--Loading Menu View Controller-->
         <scene sceneID="62y-lB-SQM">
@@ -307,8 +363,12 @@
         <image name="CreditsMenu" width="480" height="320"/>
         <image name="LoadingMenu" width="480" height="320"/>
         <image name="MainMenu" width="480" height="320"/>
+        <image name="MainMenuButton-Normal" width="290" height="40"/>
+        <image name="PauseButton-HighLighted" width="80" height="80"/>
         <image name="PauseButton-Normal" width="80" height="80"/>
+        <image name="PauseMenu" width="480" height="320"/>
         <image name="PlayButton-Normal" width="290" height="40"/>
+        <image name="Restart-Normal" width="290" height="40"/>
         <image name="Settings-Normal" width="290" height="40"/>
         <image name="SettingsMenu" width="480" height="320"/>
         <image name="SplashMenu" width="480" height="320"/>
@@ -320,6 +380,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="vRX-BV-fre"/>
+        <segue reference="YTT-DD-aIh"/>
+        <segue reference="qRG-94-QvL"/>
     </inferredMetricsTieBreakers>
 </document>
