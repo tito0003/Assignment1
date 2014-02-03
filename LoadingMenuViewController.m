@@ -36,9 +36,10 @@
 }
 -(void) SwitchToTheNextScreen
 {
-    InGameViewController *InGameVC = [[InGameViewController alloc] initWithNibName:nil bundle:nil];
-    [self presentViewController:(InGameVC) animated:(YES) completion:NULL];
+    //InGameViewController *InGameVC = [[InGameViewController alloc] initWithNibName:nil bundle:nil];
+    //[self presentViewController:(InGameVC) animated:(YES) completion:NULL];
   ////////////////////////////////////////////////////////
+    [self performSegueWithIdentifier:@"InGameViewController" sender:(self)];
     
     
 }

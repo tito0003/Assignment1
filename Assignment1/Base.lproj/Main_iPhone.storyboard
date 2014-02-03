@@ -178,6 +178,36 @@
             </objects>
             <point key="canvasLocation" x="784" y="571"/>
         </scene>
+        <!--In Game View Controller-->
+        <scene sceneID="OgQ-Zw-Kpi">
+            <objects>
+                <viewController id="OWC-ag-kTh" customClass="InGameViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H9c-IU-UdN">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Eav-rd-wX8">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gIO-4R-MnN">
+                                <rect key="frame" x="502" y="11" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" backgroundImage="PauseButton-Normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oGh-Yy-CVA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1820" y="-286"/>
+        </scene>
         <!--Loading Menu View Controller-->
         <scene sceneID="62y-lB-SQM">
             <objects>
@@ -195,32 +225,13 @@
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <segue destination="OWC-ag-kTh" kind="modal" identifier="InGameViewController" id="DAZ-Fo-bxz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EMP-lF-qZe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1116" y="-286"/>
-        </scene>
-        <!--In Game View Controller-->
-        <scene sceneID="xnd-QB-BoK">
-            <objects>
-                <viewController modalTransitionStyle="flipHorizontal" id="Rkq-9I-Yb2" customClass="InGameViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="SVl-qO-za6">
-                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ControlsMenu" id="DuD-TT-XaB">
-                                <rect key="frame" x="-47" y="0.0" width="568" height="320"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    </view>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Hvl-tZ-R4o" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1840" y="-286"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="e66-hS-Csr">
@@ -296,6 +307,7 @@
         <image name="CreditsMenu" width="480" height="320"/>
         <image name="LoadingMenu" width="480" height="320"/>
         <image name="MainMenu" width="480" height="320"/>
+        <image name="PauseButton-Normal" width="80" height="80"/>
         <image name="PlayButton-Normal" width="290" height="40"/>
         <image name="Settings-Normal" width="290" height="40"/>
         <image name="SettingsMenu" width="480" height="320"/>
