@@ -39,7 +39,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1102" y="-60"/>
+            <point key="canvasLocation" x="-1090" y="-632"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Zha-SO-Leb">
@@ -57,10 +57,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73G-Hl-d8j">
-                                <rect key="frame" x="43" y="709" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73G-Hl-d8j">
+                                <rect key="frame" x="20" y="689" width="220" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back">
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" image="BackButton-Normal" backgroundImage="BackButton-Normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -145,7 +146,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yIS-le-xHj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="690" y="-92"/>
+            <point key="canvasLocation" x="730" y="-536"/>
         </scene>
         <!--Setting Menu View Controller-->
         <scene sceneID="hVa-RI-f9W">
@@ -164,9 +165,9 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2H-bq-ysq">
-                                <rect key="frame" x="29" y="702" width="46" height="30"/>
+                                <rect key="frame" x="32" y="702" width="220" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back">
+                                <state key="normal" backgroundImage="BackButton-Normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -214,12 +215,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MVc-2X-DsF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2089" y="1202"/>
+            <point key="canvasLocation" x="2057" y="1026"/>
         </scene>
-        <!--Setting Menu View Controller-->
+        <!--Loading Menu View Controller-->
         <scene sceneID="Pua-j4-StC">
             <objects>
-                <viewController modalTransitionStyle="flipHorizontal" id="tjO-xD-iQI" customClass="SettingMenuViewController" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" id="tjO-xD-iQI" customClass="LoadingMenuViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Dmd-2c-uNw"/>
                         <viewControllerLayoutGuide type="bottom" id="Pdx-ZQ-3KC"/>
@@ -258,10 +259,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00z-o8-Bg1">
-                                <rect key="frame" x="44" y="691" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00z-o8-Bg1">
+                                <rect key="frame" x="32" y="691" width="220" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back">
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" backgroundImage="BackButton-Normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -290,14 +292,15 @@
         </scene>
     </scenes>
     <resources>
+        <image name="BackButton-Normal" width="290" height="40"/>
         <image name="Controls-Normal" width="290" height="40"/>
         <image name="ControlsMenu" width="1024" height="768"/>
         <image name="Credits-Normal" width="290" height="40"/>
         <image name="CreditsMenu" width="1024" height="768"/>
         <image name="LoadingMenu" width="1024" height="768"/>
         <image name="MainMenu" width="1024" height="768"/>
-        <image name="PlayButton-Normal" width="240" height="40"/>
-        <image name="Settings-Normal" width="240" height="40"/>
+        <image name="PlayButton-Normal" width="290" height="40"/>
+        <image name="Settings-Normal" width="290" height="40"/>
         <image name="SettingsMenu" width="1024" height="768"/>
         <image name="SplashMenu" width="1024" height="768"/>
     </resources>

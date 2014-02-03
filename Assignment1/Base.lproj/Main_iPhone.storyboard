@@ -84,9 +84,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="K8L-hN-VOI">
-                                <rect key="frame" x="20" y="277" width="46" height="30"/>
+                                <rect key="frame" x="13" y="291" width="110" height="15"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="back">
+                                <state key="normal" backgroundImage="BackButton-Normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -149,9 +149,9 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2fp-Hz-Wvh">
-                                <rect key="frame" x="36" y="270" width="35" height="30"/>
+                                <rect key="frame" x="20" y="285" width="110" height="15"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back">
+                                <state key="normal" backgroundImage="BackButton-Normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -195,9 +195,6 @@
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    <connections>
-                        <segue destination="Rkq-9I-Yb2" kind="modal" id="a6y-nl-z5M"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EMP-lF-qZe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -224,48 +221,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hvl-tZ-R4o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1840" y="-286"/>
-        </scene>
-        <!--Table View Controller - Root View Controller-->
-        <scene sceneID="aoe-ap-VJ9">
-            <objects>
-                <tableViewController id="MBf-uy-0gV" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="RbB-Rh-ZPy">
-                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="kvZ-7F-ld1">
-                                <rect key="frame" x="0.0" y="86" width="568" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kvZ-7F-ld1" id="f2I-5h-obv">
-                                    <rect key="frame" x="0.0" y="0.0" width="568" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="a3O-4y-yHz"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aiq-vU-uzT" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2144" y="336"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Hcz-ld-odt">
-            <objects>
-                <navigationController definesPresentationContext="YES" id="LvH-CG-yby" sceneMemberID="viewController">
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5rN-Pb-Y1P">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="MBf-uy-0gV" kind="relationship" relationship="rootViewController" id="sjR-bn-aJ4"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wmK-p0-qYI" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1440" y="316"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="e66-hS-Csr">
@@ -311,10 +266,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vgb-6I-siK">
-                                <rect key="frame" x="20" y="282" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vgb-6I-siK">
+                                <rect key="frame" x="20" y="292" width="110" height="15"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back">
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" backgroundImage="BackButton-Normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -333,14 +289,15 @@
         </scene>
     </scenes>
     <resources>
+        <image name="BackButton-Normal" width="290" height="40"/>
         <image name="Controls-Normal" width="290" height="40"/>
         <image name="ControlsMenu" width="480" height="320"/>
         <image name="Credits-Normal" width="290" height="40"/>
         <image name="CreditsMenu" width="480" height="320"/>
         <image name="LoadingMenu" width="480" height="320"/>
         <image name="MainMenu" width="480" height="320"/>
-        <image name="PlayButton-Normal" width="240" height="40"/>
-        <image name="Settings-Normal" width="240" height="40"/>
+        <image name="PlayButton-Normal" width="290" height="40"/>
+        <image name="Settings-Normal" width="290" height="40"/>
         <image name="SettingsMenu" width="480" height="320"/>
         <image name="SplashMenu" width="480" height="320"/>
     </resources>
@@ -351,6 +308,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="T7x-NQ-5ek"/>
+        <segue reference="vRX-BV-fre"/>
     </inferredMetricsTieBreakers>
 </document>

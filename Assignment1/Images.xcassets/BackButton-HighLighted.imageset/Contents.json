@@ -3,12 +3,12 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "Settings-Normalsmall.png"
+      "filename" : "backHighlightedlSmall.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "Settings-Normal@2x.png"
+      "filename" : "BackButtonHighlighted.png"
     }
   ],
   "info" : {
