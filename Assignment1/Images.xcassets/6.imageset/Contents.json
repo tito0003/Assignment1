@@ -1,14 +1,24 @@
 {
   "images" : [
     {
-      "idiom" : "universal",
+      "idiom" : "iphone",
       "scale" : "1x",
-      "filename" : "6.png"
+      "filename" : "6-3.png"
     },
     {
-      "idiom" : "universal",
+      "idiom" : "iphone",
       "scale" : "2x",
+      "filename" : "6-2.png"
+    },
+    {
+      "idiom" : "ipad",
+      "scale" : "1x",
       "filename" : "6-1.png"
+    },
+    {
+      "idiom" : "ipad",
+      "scale" : "2x",
+      "filename" : "6.png"
     }
   ],
   "info" : {
